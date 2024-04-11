@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Geographystyle.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<title>SpainPage</title>
+</head>
+<body>
+<header>
+<h2>Spain</h2>
+</header>
+<script>
+function spain() {
+var score=0;
+
+alert("Welcome to the Spain quiz - Good Luck!");
+
+var q1 = prompt("What is the capital of Spain? - Enter a for Lisbon - Enter b for Madrid - Enter c for Moskow");
+
+
+ if (q1=="a"||q1=="b"||q1=="c"){
+   if (q1=="b"){
+     alert("Correct");
+	  score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		  
+	
+		var q2 = prompt("What currency do Spain use? - Enter a for Pounds  - Enter b for Yen - Enter c for Euros");
+	
+	if (q2=="a"||q2=="b"||q2=="c"){
+      if (q2=="c"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		
+		
+		var q3 = prompt("Who was the first Spanish actor to win an Oscars? - Enter a for Javier Bardem - Enter b for Johnny Dep  - Enter c for Will Smith");
+	
+	if (q3=="a"||q3=="b"||q3=="c"){
+      if (q3=="a"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		
+    
+	     var q4 = prompt("What is the tradition dance of Spain? - Enter a for Baroque - Enter b for Ballos - Enter c for Flamenco");
+	
+	if (q4=="a"||q4=="b"||q4=="c"){
+      if (q4=="c"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		
+		
+		var q5 = prompt("Spain has a tomato fight festival every year? - Enter a for True - Enter b for False");
+	
+	if (q5=="a"||q5=="b"){
+      if (q5=="a"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		
+		
+		var q6 = prompt("What is the national dish of Spain? - Enter a for Paella - Enter b for Spanish Omlette - Enter c for Olives");
+	
+	if (q6=="a"||q6=="b"||q6=="c"){
+      if (q6=="b"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		alert("Your score is: " + score);
+	}
+</script>
+<script>
+function convert() {
+  var eurosOutput=0;
+  var poundsEntered=document.getElementById("pounds").value;
+  eurosOutput = poundsEntered * 1.12;
+  document.getElementById("euros").value=eurosOutput;
+  }
+  function Madridinfo() {
+  window.open('https://www.youtube.com/watch?v=FUHMypUP0w4',);
+  }
+  </script>
+ <nav>
+ <div class="navbar">
+  <a class="active" href="index.html"><i class="fas fa-home"></i>Home</a>
+  <a href="France.html"><i class="fas fa-cheese"></i>France</a>
+  <a href="Spain.html"><i class="fas fa-umbrella-beach"></i>Spain</a>
+  <a href="Italy.html"><i class="fas fa-sun"></i>Italy</a>
+ </div>
+ </nav>
+ <form action="converter.html"><br>
+    <input type="submit" value="Currency Converter" /></form><br>
+ <button onclick="spain()">Spain Quiz</button><br><br>
+<form>
+    <input type="submit" value="Further Info" onclick= "Madridinfo()" /><br><br>
+ </form>
+ <section>
+ <h3><u>Info about Spain</u></h3>
+ <p style >The capital city of Spain is Madrid.<br>
+ Spain is officially the Kingdom of Spain.<br>
+ Is a country in Southwestern Europe with some pockets of territory across the Strait of Gibraltar and the Atlantic Ocean.<br>
+ Its continental European territory is situated on the Iberian Peninsula.<br>
+ Its territory also includes two archipelagos: the Canary Islands off the coast of North Africa,<br>
+ and the Balearic Islands in the Mediterranean Sea.</p>
+ 
+ <img src="Beach.jpg" alt="Beach" width="400" height="300">
+ <img src="Spaincity.jpg" alt="SpanishCity" width="400" height="300">
+ </section>
+ <footer>
+ <p style ="background-color:lightblue"; >Geography App. By David Zielinski</p>
+ </footer>
+
+</body>
+</html>

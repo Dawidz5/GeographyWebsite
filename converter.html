@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Converter</title>
+</head>
+<body>
+<header>
+<h2>Currency Converter</h2>
+</header>
+<script>
+function convert() {
+  var eurosOutput=0;
+  var poundsEntered=document.getElementById("pounds").value;
+  eurosOutput = poundsEntered * 1.12;
+  document.getElementById("euros").value=eurosOutput;
+  }
+  </script>
+<form name ="convertion">
+    <input type="text" id="pounds" name="pounds">
+	  <label>pounds</label><br>
+	<input type="text" id="euros" name="euros">
+	  <label>Euros</label><br><br>
+	<input type="button" value="convert pounds to euros" onclick="convert()">
+</form>

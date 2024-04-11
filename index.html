@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Geographystyle.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<title>HomePage</title>
+</head>
+<body>
+<header>
+<h2>Geography App</h2>																																	
+</header>
+ <nav>
+ <div class="navbar">
+  <a class="active" href="index.html"><i class="fas fa-home"></i>Home</a>
+  <a href="France.html"><i class="fas fa-cheese"></i>France</a>
+  <a href="Spain.html"><i class="fas fa-umbrella-beach"></i>Spain</a>
+  <a href="Italy.html"><i class="fas fa-sun"></i>Italy</a>
+ </div>
+ </nav>
+ <form>
+ </form>
+ <section>
+
+	  <script>
+var name;
+name=prompt("Please enter your name?"); 
+var d=new Date();
+var hour=d.getHours();
+    if(hour<12){
+       document.write("<h1>Good morning " + name + "</h1>");
+     }
+      else if(hour>19){
+	    document.write("<h1>Good evening " + name + "</h1>");
+     }
+     else{
+	     document.write("<h1>Good afternoon " + name + "</h1>");
+	 }
+</script>
+ <p style>Which country would you like to go visit today?</p>
+ <img src="France.jpg" alt="FranceFlag" width="300" height="300">
+ <img src="Spain.jpg" alt="SpainFlag" width="300" height="300">
+ <img src="Italy.jpg" alt="ItalyFlag" width="300" height="300">
+ </section>
+ <footer>
+ <p style="background-color:lightblue";>Geography App. By David Zielinski</p>
+ </footer>
+ 
+</body>
+</html>

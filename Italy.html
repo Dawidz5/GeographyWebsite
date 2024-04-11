@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Geographystyle.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<title>ItalyPage</title>
+</head>
+<body>
+<header>
+<h2>Italy</h2>
+</header>
+<script>
+function italy(){
+var score=0;
+		
+alert("Welcome to the Italy Quiz - Good Luck!");
+		
+		
+var q1 = prompt("What is the capital of Italy? - Enter a for Rome - Enter b for Paris - Enter c for Berlin");
+
+
+ if (q1=="a"||q1=="b"||q1=="c"){
+   if (q1=="a"){
+     alert("Correct");
+	  score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		
+		
+		var q2 = prompt("Which Italian artist painted the Mona-Lisa? - Enter a for Gary Barlow  - Enter b for Picasso - Enter c for Leonardo Da Vinci");
+	
+	if (q2=="a"||q2=="b"||q2=="c"){
+      if (q2=="c"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		
+		
+		var q3 = prompt("Which of these means Hello in Italian? - Enter a for Halo - Enter b for Ciao  - Enter c for Bonjour ");
+	
+	if (q3=="a"||q3=="b"||q3=="c"){
+      if (q3=="b"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		
+    
+	     var q4 = prompt("What currency does Italy use? - Enter a for Euros - Enter b for Dollars - Enter c for Pounds");
+	
+	if (q4=="a"||q4=="b"||q4=="c"){
+      if (q4=="a"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		
+		
+		var q5 = prompt("What is the national dish of Italy? - Enter a for Pasta - Enter b for Pizza - Enter c for Burgers");
+	
+	if (q5=="a"||q5=="b"||q5=="c"){
+      if (q5=="b"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		
+		
+		var q6 = prompt("What does a gift of yellow flowers suggest?? - Enter a for Jealousy - Enter b for Romance - Enter c for Hatred");
+	
+	if (q6=="a"||q6=="b"||q6=="c"){
+      if (q6=="a"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		alert("Your score is: " + score);
+    }
+</script>
+<script>
+function convert() {
+  var eurosOutput=0;
+  var poundsEntered=document.getElementById("pounds").value;
+  eurosOutput = poundsEntered * 1.12;
+  document.getElementById("euros").value=eurosOutput;
+  }
+  </script>
+<nav>
+ <div class="navbar">
+  <a class="active" href="index.html"><i class="fas fa-home"></i>Home</a>
+  <a href="France.html"><i class="fas fa-cheese"></i>France</a>
+  <a href="Spain.html"><i class="fas fa-umbrella-beach"></i>Spain</a>
+  <a href="Italy.html"><i class="fas fa-sun"></i>Italy</a>
+ </div>
+ </nav>
+ <form action="converter.html"><br>
+    <input type="submit" value="Currency Converter" /></form><br>
+ <button onclick="italy()">Italy Quiz</button>
+ <form action="https://www.swedishnomad.com/facts-about-rome/"><br>
+    <input type="submit" value="Further Info" /></form>
+ <section>
+ <h3><u>Info about Italy</u></h3>
+ <p style >
+    The capital city of Italy is Rome.<br>
+Italy, officially the Italian Republic, is a country consisting of a continental part.<br>
+Italy is located in south-central Europe, and is considered part of western Europe.<br>
+Delimited by the Alps and a peninsula surrounded by several islands.<br>
+The country covers a total area of 301,340 km (116,350 sq mi)</p>
+ <img src="Colloseum.jpg" alt="Colloseum" width="400" height="300">
+ <img src="Bridge.jpg" alt="Bridge" width="400" height="300">
+ </section>
+ <footer>
+ <p style ="background-color:lightblue"; >Geography App. By David Zielinski</p>
+ </footer>
+
+</body>
+</html>

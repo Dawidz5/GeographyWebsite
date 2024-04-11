@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Geographystyle.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<title>FrancePage</title>
+</head>
+<body>
+<header>
+<h2>France</h2>
+</header>
+<script>
+function france() {
+var score=0;
+
+alert("Welcome to the France Quiz - Good Luck!");
+
+
+var q1 = prompt("What is the capital of France? - Enter a for Paris - Enter b for Rome - Enter c for Berlin");
+
+
+ if (q1=="a"||q1=="b"||q1=="c"){
+   if (q1=="a"){
+     alert("Correct");
+	  score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+	
+	
+		var q2 = prompt("Which of these is a favourite landmark? - Enter a for Eiffel Tower - Enter b for Burj Khalifa - Enter c for Colosseum");
+	
+	if (q2=="a"||q2=="b"||q2=="c"){
+      if (q2=="a"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+    
+	 
+	 var q3 = prompt("Which of these means Hello in French? - Enter a for Halo - Enter b for Bonjour  - Enter c for Hallo");
+	
+	if (q3=="a"||q3=="b"||q3=="c"){
+      if (q3=="b"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+      
+ 
+	
+		 var q4 = prompt("What currency does France use? - Enter a for Yen - Enter b for Euros - Enter c for Pounds");
+	
+	if (q4=="a"||q4=="b"||q4=="c"){
+      if (q4=="b"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		
+		
+	
+	var q5 = prompt("What is the national dish of France? - Enter a for Pot-Eu-Feu - Enter b for Dumplings - Enter c for Haggis");
+	
+	if (q5=="a"||q5=="b"||q5=="c"){
+      if (q5=="b"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		  
+	
+	var q6 = prompt("What is the longest river in France? - Enter a for Nile - Enter b for Loire - Enter c for Amazon");
+	
+	if (q6=="a"||q6=="b"||q6=="c"){
+      if (q6=="b"){
+       alert("Correct");
+	    score=score+1;
+	  }
+	 
+    else{
+	     alert("Not Correct");
+		} 
+     }
+	else{
+	    alert("This isn't a valid answer");
+		}
+		alert("Your score is: " + score);
+	}
+</script>
+<script>
+function convert() {
+  var eurosOutput=0;
+  var poundsEntered=document.getElementById("pounds").value;
+  eurosOutput = poundsEntered * 1.12;
+  document.getElementById("euros").value=eurosOutput;
+  }
+  </script>
+  <div class="navbar">
+  <a class="active" href="index.html"><i class="fas fa-home"></i>Home</a>
+  <a href="France.html"><i class="fas fa-cheese"></i>France</a>
+  <a href="Spain.html"><i class="fas fa-umbrella-beach"></i>Spain</a>
+  <a href="Italy.html"><i class="fas fa-sun"></i>Italy</a>
+ </div>
+
+<form action="converter.html"><br>
+    <input type="submit" value="Currency Converter" /></form><br>
+	<button onclick="france()">France Quiz</button><br>
+	<form action="https://www.meininger-hotels.com/blog/en/fun-facts-paris/"><br>
+    <input type="submit" value="Further Info" /></form>
+ 
+ <section>
+ <h3><u>Info about France</u></h3>
+ <p style >The capital city of France is Paris.<br>
+ France is the largest country in the European Union, covering a total area of 551,695 square kilometers.<br> 
+ However it is only the third-largest country in Europe, behind Ukraine and the European portion of Russia.<br>
+ It might be time to brush up on your French language skills, because France is the place to be, according to the latest tourism figures.<br>
+ A whopping 89.3 million people visited the country in 2018, making it the most visited destination in the world.<br>
+ The country's capital, Paris, is also the third most visited city in the world, behind Bangkok and London.<br>
+ Time to get packing!</p>
+ <img src="EiffelTower.jpg" alt="EiffelTower" width="400" height="300">
+ <img src="french.jpg" alt="FrenchLandmark" width="400" height="300">
+ </section>
+ <footer>
+ <p style ="background-color:lightblue"; >Geography App. By David Zielinski</p>
+ </footer>
+
+</body>
+</html>
+
+ 
